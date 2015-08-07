@@ -17,6 +17,6 @@
  Internal perspectev functions
 }
 \details{
-These are not meant to be called by the user except potentially as trait functions. See tutorial for details.
+These are not meant to be called by the user except potentially as trait functions. See tutorial for details (http://evolve.zoo.ox.ac.uk/Evolve/Perspectev.html).
 }
 \keyword{ internal }

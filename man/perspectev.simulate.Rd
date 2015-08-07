@@ -1,14 +1,14 @@
 \name{perspectev.simulate}
 \alias{perspectev.simulate}
 \title{
-Simulate species/genus level selection at different intensities and observe resulting p values.
+Simulate upper/lower level selection at different intensities and observe resulting p values.
 }
 \description{
-Perform simulations of natural selection on a data set, and observe what p values result. Perform linear transformation of trait vs. survivorship (using provided or fitted slope and intercept) and then transform into survviorship probabilites using inv.logit function.
+Perform simulations of natural selection on a data set, and observe what p values result. Performs linear transformation of trait vs. survivorship (using provided or fitted slope and intercept) and then transforms into survviorship probabilites using inv.logit function.
 }
 \usage{
 perspectev.simulate(data,simulations,cores,traitfun=mcpRange,vlist=NULL,
-	binary=NA,intercept=NA,slope=NA,level=NA,noise=0,fit=FALSE)
+	binary=NA,intercept=NA,slope=NA,level=NA,noise=0,fit=FALSE,quiet=FALSE)
 }
 %- maybe also "usage" for other objects documented here.
 \arguments{
@@ -17,7 +17,7 @@ Dataframe in perspectev format. See ?perspectev.read for more information.}
   \item{simulations}{
 Number of simulations to perform. At least 1000 is recommended but can be slow.}
   \item{cores}{
-Number of cores over which to parallelize the script.}
+Number of cores over which to parallelize the simulations.}
 \item{traitfun}{
 Function for calculating trait value at each level.
 }
@@ -41,6 +41,9 @@ Fit simulation to observed parameters? Will do automatically if intercept or slo
 }
 \item{binary}{
 Is survivorship binary or continuous? Will attempt to set automatically if unspecified.
+}
+\item{quiet}{
+Suppress information messages?
 }
 }
 

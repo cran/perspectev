@@ -6,7 +6,7 @@ Calculate upper and lower level trait values and survivorship
 \description{
 Calculates upper and lower level trait values and survivorship given a data set and trait functions}
 \usage{
-perspectev.calc(data,traitfun,vlist=list())
+perspectev.calc(data,traitfun,vlist=list(),na.rm=FALSE)
 }
 \arguments{
  \item{data}{
@@ -16,6 +16,9 @@ Function for calculating trait value at each level.
 }
 \item{vlist}{
 Optional variable list for trait function.
+}
+\item{na.rm}{
+Remove NA values from trait functions? Shouldn't need to be used if trim=TRUE from perspectev.read.
 }
 }
 

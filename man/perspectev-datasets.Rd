@@ -1,7 +1,7 @@
 \name{perspectev-Datasets}
 \alias{occurrence_data}
 \alias{testData}
-\title{Supplied Data Sets}
+\title{Supplied data sets}
 \description{
  Occurrence data used in perspectev tutorial, and test data set used for checking.
 }
